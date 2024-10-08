@@ -325,7 +325,7 @@ exports.vision.timeseries = function (id, from, to, pageNumber, pageSize) {
             from: from,
             to: to,
             page_number: pageNumber,
-            pageSize: pageSize,
+            page_size: pageSize,
         }
     });
 }

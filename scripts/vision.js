@@ -2,7 +2,7 @@
  Vision API
  ****************************************************/
 
- const api = pkg.brighterbins.api;
+const api = pkg.brighterbins.api;
 
 exports.list = function () {
     return api.get('/vision/list');
@@ -20,6 +20,5 @@ exports.timeseries = function (id, from, to, pageNumber, pageSize) {
             page_size: pageSize,
         }
     });
-};
-
+}
 

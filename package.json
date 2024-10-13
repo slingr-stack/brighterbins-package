@@ -44,6 +44,16 @@
             "type": "script",
             "namespace": "vision",
             "path": "/scripts/vision.js"
+        },
+        {
+            "type": "script",
+            "namespace": "bins",
+            "path": "/scripts/bins.js"
+        },
+        {
+            "type": "script",
+            "namespace": "trackers",
+            "path": "/scripts/trackers.js"
         }
     ]
 }

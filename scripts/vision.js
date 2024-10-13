@@ -7,7 +7,7 @@ exports.vision = {
     timeseries: (id, from, to, pageNumber, pageSize) => {
     pageNumber = pageNumber || 1;
     pageSize = pageSize || 10;
-    return exports.post('/vision/timeseries/v2', {
+    return pkg.brighterbins.post('/vision/timeseries/v2', {
         body: {
             id: id,
             from: from,

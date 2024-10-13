@@ -2,9 +2,11 @@
  Vision API
  ****************************************************/
 
-exports.vision = {
-    list: () => pkg.brighterbins.get('/vision/list'),
-    timeseries: (id, from, to, pageNumber, pageSize) => {
+exports.list = function () {
+    return pkg.brighterbins.get('/vision/list');
+} 
+
+exports.timeseries = function (id, from, to, pageNumber, pageSize) {
     pageNumber = pageNumber || 1;
     pageSize = pageSize || 10;
     return pkg.brighterbins.post('/vision/timeseries/v2', {
@@ -15,7 +17,7 @@ exports.vision = {
             page_number: pageNumber,
             page_size: pageSize,
         }
-    }),
+    });
 };
 
 

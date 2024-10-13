@@ -9,7 +9,7 @@
     <tbody>
     <tr>
         <td>BrighterBins package</td>
-        <td>October 7th, 2024</td>
+        <td>October 13th, 2024</td>
         <td>Detailed description of the API of the BrighterBins package.</td>
     </tr>
     </tbody>
@@ -17,13 +17,35 @@
 
 # Overview
 
-> Add BrighterBins overview
+The BrighterBins package allows easily connect your Slingr application with BrighterBins.
 
-# Javascript API
+## Configuration
+
+You'll need a BrighterBins account.
+
+### Email
+
+This is the email of your account.
+
+### Password
+
+This is the password of your account.
+
+## Javascript API
+
+### Vision
+
+```js
+let res = pkg.brighterbins.vision.list();
+let device = res.devices[0].id;
+let now = new Date().getTime();
+let hourAgo = now - 3600000;
+let data = pkg.brighterbins.vision.timeseries(device, hourAgo, now);
+```
 
 ## Dependencies
 
-* HTTP Service (v1.6.2)
+* HTTP Service (v1.7.0)
 
 ## About SLINGR
 

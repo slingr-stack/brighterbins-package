@@ -306,26 +306,3 @@ function mergeJSON (json1, json2) {
     }
     return result;
 }
-
-/****************************************************
- Public API - Specific Helpers
- ****************************************************/
-
-/**
- * Vision Helpers
- */
-exports.vision = {};
-exports.vision.list = function () { return exports.get('/vision/list') };
-exports.vision.timeseries = function (id, from, to, pageNumber, pageSize) {
-    pageNumber = pageNumber || 1;
-    pageSize = pageSize || 10;
-    return exports.post('/vision/timeseries/v2', {
-        body: {
-            id: id,
-            from: from,
-            to: to,
-            page_number: pageNumber,
-            page_size: pageSize,
-        }
-    });
-}

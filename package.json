@@ -39,6 +39,11 @@
             "type": "script",
             "namespace": "api",
             "path": "/scripts/api.js"
+        },
+        {
+            "type": "script",
+            "namespace": "vision",
+            "path": "/scripts/vision.js"
         }
     ]
 }
